@@ -1,0 +1,148 @@
+.bgAdvancePage{
+    background: rgb(245, 247, 249);
+    height: 100%;
+    
+        .top{
+            background: #fff;
+            border-bottom: 1px solid @bgColor;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+            padding-left: 25px;
+            box-sizing: border-box;
+            .top_right{
+                margin-right: 45px;
+                display: flex;
+                .item{
+                    display: flex;
+                    align-items: center;
+                    margin-right: 18px; 
+                    &>span{
+                        font-size: 15px;
+                        margin-right: 4px;
+                    }
+                }
+            }
+        
+    }
+    .table{
+        position: absolute;
+        top: 140px;
+        bottom: 107px;
+        left: 20px;
+        right: 20px;
+        .ivu-table-wrapper{
+            margin-top:10px;
+        }
+        .ivu-poptip-footer{
+            padding: 5px 16px 5px;
+        }
+        .ivu-poptip-body {
+            padding: 5px 16px 2px;
+            .ivu-icon{
+                left:10px;
+            }
+        }
+        .top_left{
+            display: flex;
+            p{
+                padding: 5px 15px;
+                background: @bgColor;
+                color:#fff;
+                margin-right: 15px;
+                cursor: pointer;
+                transition: all 0.3s linear;
+                border: 1px solid transparent;
+                border-radius: 4px;
+                margin-right: 10px;
+                &:hover{
+                    background: #1c6d7b;
+                }
+                &.export:hover{
+                    background: #fff;
+                    border: 1px solid @bgColor;
+                    color:@bgColor;
+                }
+            }
+        }
+        .look,.delete,{
+            cursor: pointer;
+            margin-left: 5px;
+            transition: all 0.3s linear;
+        }
+        .look{
+            
+            &:hover{
+                color: rgb(75, 185, 206) !important;
+            }
+        }
+        .delete{
+            border-bottom:1px solid #333;
+            font-size: 15px;
+            margin-right: 6px;
+            &:hover{
+                color: red !important;
+                border-bottom:1px solid transparent;
+            }
+        }
+        .detail_row{
+            border-bottom:1px solid #333;
+            font-size: 15px;
+            margin-right: 6px;
+            color:@bgColor;
+            cursor: pointer;
+            &:hover{
+                color: red !important;
+                border-bottom:1px solid transparent;
+            }
+        }
+    }
+    // 分页
+    .pageContanier{
+        position: absolute;
+        border-top: 1px solid #218da0;
+        bottom: 0;
+        height: 80px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+        padding-right: 80px;
+        box-sizing: border-box;
+        background: #fff;
+        .ivu-page-item-active{
+            background: @bgColor;
+            a{
+                color:#fff;
+            }
+        }
+    }
+}
+.refuse_bgAdvance{
+    .ivu-modal-footer{
+        display: block !important;
+    }
+}
+
+.detailClos_bgAdvancePage{
+    // 抽屉
+    .closaTitle{
+        background:@bgColor;
+        color:#fff;
+        padding: 5px 18px;
+        box-sizing: border-box;
+        font-size: 16px;
+        margin: 15px 0;
+
+    }
+    .closastate{
+        font-size: 16px;
+        color:@bgColor;
+        margin-bottom: 15px;
+    }
+    .ivu-col{
+        line-height: 26px;
+        font-size: 16px;
+    }
+}

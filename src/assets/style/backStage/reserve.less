@@ -1,0 +1,204 @@
+
+.reservePage{
+    height: 100%;
+    .top{
+        background: #fff;
+        border-bottom: 1px solid @bgColor;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+        padding-left: 25px;
+        box-sizing: border-box;
+        p{
+            padding: 5px 15px;
+            background: @bgColor;
+            color:#fff;
+            margin-right: 15px;
+            cursor: pointer;
+            transition: all 0.3s linear;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            &:hover{
+                background: #1c6d7b;
+            }
+            &.export:hover{
+                background: #fff;
+                border: 1px solid @bgColor;
+                color:@bgColor;
+            }
+        }
+        .top_select{
+            padding-right: 65px;
+            display: flex;
+            align-items: center;
+            .item{
+                display: flex;
+                align-items: center;
+                margin-right: 15px;
+                &>span{
+                    margin-right: 4px;
+                }
+            }
+        }
+        .lookup{
+            padding: 5px 10px;
+            color:#fff;
+            background: @bgColor;
+            cursor: pointer;
+            transition: all 0.5s linear;
+            margin-left:18px;
+            margin-right: 45px;
+            user-select: none;
+            &:hover{
+                background:#1b6f7d;
+            }
+        }
+    }
+    .table{
+        position: absolute;
+        top: 130px;
+        bottom: 10px;
+        padding: 15px;
+        width: 100%;
+        box-sizing: border-box;
+        .look,.delete,.handle{
+            cursor: pointer;
+            margin-left: 5px;
+            transition: all 0.3s linear;
+        }
+        .look,.handle{
+            
+            &:hover{
+                color: rgb(75, 185, 206) !important;
+            }
+        }
+        .delete{
+            color: red !important;
+            &:hover{
+                color: #333 !important;
+            }
+        }
+    }
+    // 分页
+    .pageContanier{
+        position: absolute;
+        border-top: 1px solid #218da0;
+        bottom: 0;
+        height: 80px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+        padding-right: 80px;
+        box-sizing: border-box;
+        background: #fff;
+        .ivu-page-item-active{
+            background: @bgColor;
+            a{
+                color:#fff;
+            }
+        }
+    }
+}
+
+.reservePage_drawer{
+    .demo-drawer-footer{
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-top: 1px solid #e8e8e8;
+        padding: 10px 16px;
+        text-align: right;
+        background: #fff;
+    }
+    .specil_col{
+        .ivu-form-item-label{
+            width: 100%;
+            text-align: left;
+        }
+        .ivu-input-number,.ivu-date-picker{
+            width: 100%;
+        }
+    }
+    .ivu-drawer-close{
+        transition: all 0.5s linear;
+        &:hover{
+            transform: rotate(180deg);
+        }
+    }
+    .statusItem{
+        .ivu-form-item-label{
+            width: 100%;
+            text-align: left;
+        }
+    }
+    .ivu-btn-primary{
+        background: @bgColor;
+        border: 0;
+        &:hover{
+            background: #155561;
+        }
+    }
+    .closaTitle{
+        background: #218da0;
+        color: #fff;
+        padding: 5px 18px;
+        box-sizing: border-box;
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    .addToValue{
+        background: @bgColor;
+        color:#fff;
+        padding: 5px 10px;
+        transition: all 0.3s linear;
+        margin-bottom: 15px;
+        margin-left: 20px;
+        display: inline-block;
+        &:hover{
+            background: #1d7a8a;
+        }
+    }
+    .demo-upload-list{
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        line-height: 60px;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        overflow: hidden;
+        background: #fff;
+        position: relative;
+        box-shadow: 0 1px 1px rgba(0,0,0,.2);
+        margin-right: 4px;
+    }
+    .demo-upload-list img{
+        width: 100%;
+        height: 100%;
+    }
+    .demo-upload-list-cover{
+        display: none;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0,0,0,.6);
+    }
+    .demo-upload-list:hover .demo-upload-list-cover{
+        display: block;
+    }
+    .demo-upload-list-cover i{
+        color: #fff;
+        font-size: 20px;
+        cursor: pointer;
+        margin: 0 2px;
+    }
+    .label_title{
+        margin-top: 6px;
+        margin-bottom: 8px;
+    }
+}

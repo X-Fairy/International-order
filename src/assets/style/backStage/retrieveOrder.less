@@ -1,0 +1,142 @@
+.retrieveOrder{
+    .top{
+        background: #fff;
+        border-bottom: 1px solid @bgColor;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+        padding-left: 45px;
+        box-sizing: border-box;
+        .item{
+            display: flex;
+            align-items: center;
+            &>p{
+                font-size: 15px;
+                margin-right: 4px;
+            }
+        }
+        
+    }
+    .table{
+        position: absolute;
+        top: 130px;
+        bottom: 10px;
+        padding: 15px;
+        width: 100%;
+        box-sizing: border-box;
+        .export{
+            cursor: pointer;
+            &:hover{
+                color:#218da0;
+            }
+        }
+        .look{
+            color:@bgColor;
+            cursor: pointer;
+            &:hover{
+                color:#333;
+            }
+        }
+    }
+    // 分页
+    .pageContanier{
+        position: absolute;
+        border-top: 1px solid #218da0;
+        bottom: 0;
+        height: 80px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+        padding-right: 80px;
+        box-sizing: border-box;
+        background: #fff;
+        .ivu-page-item-active{
+            background: @bgColor;
+            a{
+                color:#fff;
+            }
+        }
+    }
+}
+
+.retrieveOrder_drawer{
+    .demo-drawer-footer{
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-top: 1px solid #e8e8e8;
+        padding: 10px 16px;
+        text-align: right;
+        background: #fff;
+    }
+    .ivu-drawer-close{
+        transition: all 0.5s linear;
+        &:hover{
+            transform: rotate(180deg);
+        }
+    }
+    .statusItem{
+        .ivu-form-item-label{
+            width: 100%;
+            text-align: left;
+        }
+    }
+    .ivu-btn-primary{
+        background: @bgColor;
+        border: 0;
+        &:hover{
+            background: #155561;
+        }
+    }
+    .drawerExport{
+        border-bottom: 1px solid #ddd;
+        height: 40px;
+        a{
+            background: #218da0;
+            padding: 0 15px;
+            color: #fff;
+            transition: all 0.3s linear;
+            height: 30px;
+            line-height: 30px;
+            border-radius: 4px;
+            &:hover{
+                background: #217c8c;
+            }
+        }
+        p{
+            font-size: 16px;
+        }
+    }
+    .btn_a,.date{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .info{
+        padding: 25px 15px;
+        p{
+            font-size: 16px;
+        }
+        span{
+            color:#f70000;
+            font-size: 18px;
+        }
+    }
+    .ivu-drawer{
+        width:1200px !important;
+        min-width: 1000px;
+    }
+    .list_title{
+        p{
+            background: #218da0;
+            color: #fff;
+            padding: 5px 18px;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+    }
+}

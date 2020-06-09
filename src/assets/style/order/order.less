@@ -1,0 +1,106 @@
+#order{
+    background: #f5f5f5;
+    .order_top{
+        background: #fff;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        .ivu-breadcrumb{
+            font-size: 16px;
+        }
+        .top_inner{
+            width: @bgWidth;
+            margin: 15px auto;
+            .ivu-breadcrumb-item-separator {
+                margin: 0 8px;
+                color: #b0b0b0;
+            }
+        }
+    }
+    .order_contanier{
+        padding-top: 15px;
+        .contanier_inner{
+            margin: 0 auto;
+            width: @bgWidth;
+            display: flex;
+            padding-bottom: 30px;
+        }
+        .ivu-collapse-header{
+            border-bottom: 0;
+        }
+        .ivu-collapse-item{
+            border: 0;
+        }
+        .ivu-collapse>.ivu-collapse-item.ivu-collapse-item-active>.ivu-collapse-header{
+            border-bottom: 0;
+        }
+        // 导航栏
+        .inner_left{
+            padding: 12px 0;
+            background: #fff;
+            box-sizing: border-box;
+            .order_nav{
+                width: 235px;
+                background: #fff;
+                padding-top: 12px;
+                padding-left: 24px;
+                box-sizing: border-box;
+                ul{
+                    padding-top: 10px;
+                    padding-left: 10px;
+                    li{
+                        line-height: 30px;
+                        cursor: pointer;
+                        font-size: 16px;
+                        transition: all 0.3s linear;
+                        &:hover,&.active{
+                            color:@bgColor;
+                        }
+                    }
+                }
+                &.ivu-collapse{
+                    border: 0;
+                }
+                span{
+                    // margin: 0 48px 15px;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 26px;
+                    color: #333;
+                }
+               
+                   p{
+                        padding: 6px 0;
+                        color: #757575;
+                        font-size: 14px;
+                        cursor: pointer;
+                        &.active{
+                            color:@bgColor;
+                        }
+                    }
+                
+                
+            }
+        }
+        // 订单列表
+        .order_content{
+            margin-left: 15px;
+            background: #fff;
+            padding: 36px;
+            box-sizing: border-box;
+            width: 100%;
+            .ivu-tabs-nav .ivu-tabs-tab-active {
+                color: @color;
+            }
+            .ivu-tabs-ink-bar{
+                background: @color;
+            }
+            .waitpay{
+                
+            }
+            
+        }
+    }
+}
+
+

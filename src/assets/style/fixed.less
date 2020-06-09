@@ -1,0 +1,86 @@
+
+.fixedPage{
+    position: fixed;
+    right: 30px;
+    bottom: 50px;
+    background: transparent;
+    z-index: 20000; 
+    .ivu-icon-ios-arrow-up:before{
+        color:#fff;
+    }
+    .fixed_part{
+        li{
+            width: 40px;
+            line-height: 40px;
+            background: @bgColor;
+            color:#fff;
+            font-size: 24px;
+            text-align: center;
+            line-height: 40px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: all 0.5s linear;
+            box-shadow: 0 2px 7px rgb(255, 255, 255);
+            &:hover{
+                background:#196775;
+            }
+        }
+        .ivu-avatar.ivu-avatar-icon{
+            font-size: 24px;
+        }
+        .ivu-avatar{
+            background: transparent;
+        }
+    }
+    .ivu-icon-ios-cart-outline{
+        font-size: 26px;
+    }
+    
+}
+.model_check{
+    p{
+        display: flex;
+        .icon{
+            width: 44px;
+            height: 34px;
+            font-size: 22px;
+            margin-left: 0px;
+            text-align: center;
+            border-left: 0;
+            background: @bgColor;
+            border: 1px solid transparent;
+            cursor: pointer;
+            color:#fff;
+            transition: all 0.5s linear;
+            &:hover{
+                background: #1c7888;
+                border: 1px solid @bgColor;
+                color:#fff;
+            }
+        }
+    }
+    .ivu-input{
+        height: 34px;
+        &:hover{
+            box-shadow: none;
+
+        }
+        &:focus{
+            border-color: @bgColor;
+        }
+    }
+    .ivu-modal-body{
+        padding: 30px 20px 35px ;
+        box-sizing: border-box;
+    }
+    .ivu-modal-footer{
+        display: none;
+    }
+    .ivu-modal-close{
+        transition: all 0.3s linear;
+        &:hover{
+            transform: rotate(180deg);
+            color:@bgColor;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.backStage{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    .ivu-layout{
+        position: absolute;
+        left: 199px;
+        height: 100%;
+        right: 0;
+        transition: left .5s linear;
+        &.active{
+            left: 64px;
+        }
+    }
+}

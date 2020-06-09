@@ -1,0 +1,95 @@
+.coupon{
+    p.order_title{
+        margin: 0;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 68px;
+        color: #757575;
+        span{
+            margin-left: 10px;
+            font-size: 12px;
+            line-height: 1.5;
+        }
+    }
+    .img{
+        width:100%;
+        padding-left:45px;
+        padding-top:20px;
+        li{
+            background: #76b6b8;
+            width: 45%;
+            padding: 10px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between;
+            float: left;
+            margin-right: 40px;
+            margin-bottom: 15px;
+            .left{
+                text-align: center;
+                width:53%;
+                margin-right: 18px;
+                .date{
+                    background: url(../../images/conpon.png) center center no-repeat;
+                    background-size: 100% 100%;
+                    width: 190px;
+                    height: 60px;
+                    color:#fff;
+                    padding:0 5px;
+                    padding-top: 12px;
+                    box-sizing: border-box;
+                    span{
+                        color:#000;
+                        margin-right: 5px;
+                    }
+                }
+                h3{
+                    font-size: 22px;
+                    padding: 3px 0;
+                }
+                .subheading{
+                    font-size: 9px;
+                    color:#fff;
+                }
+            }
+            .right{
+                width: 45%;
+                background: #fff;
+                border-radius: 50%;
+                padding-top: 15px;
+                text-align: center;
+                h3{
+                    font-size: 15px;
+                    width:60px;
+                    height: 25px;
+                    line-height: 25px;
+                    margin-left: 46px;
+                    font-weight: normal;
+                    color:#fff;
+                    background: #76b6b8;
+                    animation: all 0.5s linear;
+                    &.noUsed{
+                        cursor: pointer;
+                        &:hover{
+                            background: #d5386b;
+                            color:#fff;
+                        }
+                    }
+                }
+                p{
+                    color:#d5386b;
+                    font-size: 26px;
+                    font-weight: bold;
+                    padding: 3px 0;
+                    span{
+                        font-size: 14px;
+                    }
+                }
+                .subtitle{
+                    font-size: 12px;
+                    color:#000;
+                }
+            }
+        }
+    }
+}

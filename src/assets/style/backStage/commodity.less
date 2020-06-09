@@ -1,0 +1,534 @@
+.commodity{
+    height: 100%;
+    .table_top{
+        display: flex;
+        margin-right: 10px;
+        .ivu-btn{
+            background: @bgColor;
+            color:#fff;
+        }
+    }
+    .inputRow{
+        height: 30px;
+        border:1px solid #cfd1d7;
+        padding: 5px;
+        color: #6c7485;
+        text-align: center;
+        border-radius: 4px !important;
+        width:80px;
+        &:focus{
+            transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+            box-shadow: inset 0 1px 1px @bgColor;
+        }
+    }
+    .ivu-checkbox-checked .ivu-checkbox-inner {
+        border-color: #218da0;
+        background-color: #218da0;
+    }
+    .top{
+        background: #fff;
+        border-bottom: 1px solid @bgColor;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .top_left{
+            display: flex;
+            align-items: center;
+            padding-left:25px;
+            a{
+                padding: 4px 15px;
+                background: @bgColor;
+                color:#fff;
+                margin-right: 10px;
+                cursor: pointer;
+                transition: all 0.3s linear;
+                border: 1px solid transparent;
+                &:hover{
+                    background: #1c6d7b;
+                }
+                &.export{
+                    border-radius: 4px;
+                    :hover{
+                        background: #fff;
+                        border: 1px solid @bgColor;
+                        color:@bgColor;
+                    }
+                }
+            }
+            .ivu-upload{
+                display: flex;
+            }
+        }
+        .top_select{
+            padding: 15px 10px;
+            display: flex;
+            align-items: center;
+            .item{
+                margin-right:25px;
+                display: flex;
+                align-items: center;
+                .item_title{
+                    font-size: 15px;
+                }
+            }
+            .lookup{
+                padding: 5px 10px;
+                color:#fff;
+                background: @bgColor;
+                cursor: pointer;
+                transition: all 0.5s linear;
+                margin-left:18px;
+                margin-right: 25px;
+                user-select: none;
+                border-radius: 4px;
+                &:hover{
+                    background:#1b6f7d;
+                }
+            }
+            .ivu-radio-inner:after{
+                background: @bgColor;
+            }
+    }
+        
+        
+    }
+    .ivu-table-small {
+        font-size: 14px;
+    }
+    .table{
+        position: absolute;
+        top: 120px;
+        bottom: 80px;
+        padding: 15px;
+        width: 100%;
+        box-sizing: border-box;
+        .setProduct{
+            padding-left: 15px;
+            .ivu-switch{
+                display: block;
+                margin: 5px !important;
+            }
+            .ivu-switch-inner{
+                left: 22px;
+            }
+            .ivu-switch-checked .ivu-switch-inner{
+                left: 7px;
+            }
+
+        }
+        .ivu-table-cell{
+            padding: 0;
+        }
+        .hs_code{
+            cursor: pointer;
+            &:hover{
+                color:@bgColor;
+            }
+        }
+        .like_row{
+            cursor: pointer;
+            a{
+                color:#218da0;
+                border-bottom: 1px solid #218da0;
+                transition: all 0.3s linear;
+                &:hover{
+                    border-bottom: none;
+                }
+            }
+        }
+        .ivu-table-row{
+            td:nth-child(2n){
+                .ivu-table-cell{
+                    padding: 0;
+                }
+            }
+        }
+        .look,.delete{
+            cursor: pointer;
+            margin-left: 5px;
+            transition: all 0.3s linear;
+        }
+        .look{
+            
+            &:hover{
+                color: rgb(75, 185, 206) !important;
+            }
+        }
+        .delete{
+            &:hover{
+                color: red !important;
+            }
+        }
+        .itemEn{
+            width: '100%';
+            overflow: 'hidden';
+            textOverflow: 'ellipsis';
+            whiteSpace: 'nowrap';
+            cursor: pointer;
+            color: #2d8cf0;
+            &:hover{
+                color:#333;
+            }
+        }
+        .check_upload{
+            color:@bgColor;
+            background: #fff;
+            cursor: pointer;
+            transition: all 0.3s linear;
+            border: 1px solid @bgColor;
+            margin-left: 10px;
+            padding: 0px 12px;
+            height: 32px;
+            line-height: 32px;
+            &:hover{
+                color:#fff;
+                background: @bgColor;
+            }
+        }
+    }
+    // 分页
+    .pageContanier{
+        position: absolute;
+        border-top: 1px solid #218da0;
+        bottom: 0;
+        height: 80px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+        padding-right: 80px;
+        box-sizing: border-box;
+        background: #fff;
+        .ivu-page-item-active{
+            background: @bgColor;
+            a{
+                color:#fff;
+            }
+        }
+    }
+}
+
+// 商品详情编辑框
+.commodity_drawer{
+    .demo-drawer-footer{
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-top: 1px solid #e8e8e8;
+        padding: 10px 16px;
+        text-align: right;
+        background: #fff;
+        .ivu-btn-primary{
+            background: @bgColor;
+            &:hover{
+                background: #1b7484;
+            }
+        }
+    }
+    .formImg{
+        width: 100%;
+    }
+    .detail_upload{
+        label{
+            width:100%;
+            text-align: left;
+        }
+    }
+}
+.drawer_relatedPagae.synchro_relatedPage .ivu-drawer.ivu-drawer-right{
+    min-width: 800px;
+}
+.Import_drawerPage{
+    .synchro_relatedPage .ivu-drawer.ivu-drawer-right{
+        min-width: 1430px;
+    }
+    .ivu-input-wrapper input{
+        width:150px;
+        height: 30px;
+    }
+    .sync_page {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 0px;
+        padding-top: 10px;
+        .ivu-page-item-active{
+            background: @bgColor;
+            a{
+                color:#fff;
+            }
+        }
+    }
+}
+.export_drawer{
+    .ivu-drawer.ivu-drawer-right{
+        width: 700px !important;
+        min-width: 700px;
+    }
+}
+// 导出抽屉
+.export_drawer,.synchro_relatedPage{
+    .ivu-drawer.ivu-drawer-right{
+        min-width: 700px;
+    }
+    .demo-drawer-footer{
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-top: 1px solid #e8e8e8;
+        padding: 10px 16px;
+        text-align: right;
+        background: #fff;
+    }
+    .price_qj{
+        .ivu-form-item-label{
+            width: 100%;
+            text-align: left;
+        }
+        .ivu-input-number{
+            width: 100%;
+            border-radius: 0;
+        }
+    }
+    .ivu-btn-primary{
+        background: @bgColor;
+        &:hover{
+            background: #1c7282;
+        }
+    }
+    .inputRow{
+        height: 30px;
+        border:1px solid #cfd1d7;
+        padding: 5px;
+        color: #6c7485;
+        text-align: center;
+        &:focus{
+            transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+            box-shadow: inset 0 1px 1px @bgColor;
+        }
+    }
+    .relate_add{
+        padding: 5px 12px;
+        background: @bgColor;
+        color: #fff;
+        transition: all 0.3s linear;
+        &:hover{
+            background: #1b7484;
+        }
+    }
+    .form_top{
+        .ivu-form-item-content{
+            display: flex;
+            justify-content: space-between;
+            .relate_add{
+                padding: 0px 12px;
+                background: @bgColor;
+                color: #fff;
+                transition: all 0.3s linear;
+                border-radius: 4px;
+                &:hover{
+                    background: #1b7484;
+                }
+            }
+        }
+    }
+    .target_goods{
+        border: 1px solid #eee;
+        margin-bottom: 15px;
+        padding: 20px 10px;
+        .target_top{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 15px;
+            .goods_left{
+                display: flex;
+                .goods_info{
+                    margin: 20px 0 0 15px;
+                }
+            }
+            .goods_right{
+                height: 22px;
+                padding: 0 10px;
+            }
+        }
+        .item_attr{
+            padding-top: 15px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            .item_title{
+                display: flex;
+                p{
+                    color:#515a6e;
+                }
+                .del_attr{
+                    margin-left: 10px;
+                    background: #fff;
+                    border:1px solid @bgColor;
+                    color:@bgColor;
+                    padding: 1px 10px;
+                    transition:all 0.3s linear;
+                    border-radius: 4px;
+                    &:hover{
+                        background: #1b7484;
+                        color:#fff;
+                    }
+                }
+            }
+            li.item_li{
+                float: left;
+                margin-left: 65px;
+                &.en_item {
+                    margin-left: 55px;
+                }
+            }
+            .ivu-input:hover{
+                border-color: @bgColor;
+            }
+            .ivu-input:focus {
+                border-color: @bgColor;
+                outline: 0;
+                box-shadow: 0 0 0 2px @bgColor;
+            }
+        }
+        .more_attr{
+            a{
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+.filemodel_commodity{
+    .file_list{
+        cursor: pointer;
+        font-size: 14px;
+        line-height: 25px;
+        transition: all 0.3s linear;
+    }
+    .ivu-modal-footer{
+        display: none;
+    }
+}
+
+.correntModel_commodity{
+    .ivu-modal-footer {
+        .ivu-btn-primary{
+            background: @bgColor;
+            &:hover{
+                background: #1c7282;
+            }
+        }
+    }
+    .ivu-icon-ios-close{
+        transition: all 0.3s linear;
+        &:hover{
+            transform: rotate(180deg);
+        }
+    }
+    .ivu-modal-footer{
+        display: block;
+    }
+}
+.areaModel_commodity{
+    .ivu-modal-footer {
+        .ivu-btn-primary{
+            background: @bgColor;
+            &:hover{
+                background: #1c7282;
+            }
+        }
+    }
+    .ivu-icon-ios-close{
+        transition: all 0.3s linear;
+        &:hover{
+            transform: rotate(180deg);
+        }
+    }
+    .ivu-modal-footer{
+        display: block;
+    }
+}
+.synchro_modal{
+    p{
+        padding: 4px 0;
+        color:@bgColor;
+        span{
+            color:#999;
+        }
+    }
+    .sync_search{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .syncLook{
+        cursor: pointer;
+        width: 45px;
+        text-align: center;
+        height: 30px;
+        background: @bgColor;
+        line-height: 30px;
+        color:#fff;
+        transition: all 0.3s linear;
+        margin-left: 5px;
+        &:hover{
+            background: #1c7282;
+        }
+    }
+    .ivu-btn-primary{
+        background: @bgColor;
+        &:hover{
+            background: #1c7282;
+        }
+    }
+    .inputRow{
+        height: 30px;
+        border:1px solid #cfd1d7;
+        padding: 5px;
+        color: #6c7485;
+        text-align: center;
+        &:focus{
+            transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+            box-shadow: inset 0 1px 1px @bgColor;
+        }
+    }
+    .ivu-modal{
+        width: 600px;
+    }
+}
+
+.searchCode_goods{
+    .ivu-modal{
+        width: 800px !important;
+
+    }
+}
+
+#witch_modal,#upload_modal,.hsModal{
+    .ivu-btn-primary{
+        background: @bgColor;
+        &:hover{
+            background: #1c7282;
+        }
+    }
+    .ivu-modal-footer{
+        display: block;
+    }
+}
+
+.adver_credentialsPage{
+    .icon_img{
+        width:30px;
+        height:30px;
+        margin-top:5px;
+        margin-right:5px;
+        cursor:pointer;
+    }
+}
+.ivu-input[disabled] {
+    color:#000;
+}

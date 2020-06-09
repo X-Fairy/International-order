@@ -1,0 +1,150 @@
+
+
+
+.videoPage{
+    height: 100%;
+    .top{
+        background: #fff;
+        border-bottom: 1px solid @bgColor;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+        padding-left: 25px;
+        box-sizing: border-box;
+        .top_left{
+            display: flex;
+            justify-content: center;
+        }
+        .upload{
+            background: #218da0;
+            color: #fff;
+            padding: 0 15px;
+            border-radius: 5px;
+            line-height: 33px;
+            cursor: pointer;
+            &:hover{
+                background: #0d93a9;
+            }
+        }
+        .ivu-upload-drag{
+            background: @bgColor;
+            padding: 6px 15px;
+            color:#fff;
+            border: 0;
+            margin-right: 15px;
+            &:hover{
+                background: #0d93a9;
+                border: 0;
+            }
+        }
+        .top_right{
+            margin-right: 120px;
+            display: flex;
+            .item{
+                display: flex;
+                align-items: center;
+                margin-right: 18px; 
+                &>span{
+                    font-size: 15px;
+                    margin-right: 4px;
+                }
+            }
+        }
+        p{
+            padding: 5px 15px;
+            background: @bgColor;
+            color:#fff;
+            cursor: pointer;
+            transition: all 0.3s linear;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            &:hover{
+                background: #1c6d7b;
+            }
+            &.export:hover{
+                background: #fff;
+                border: 1px solid @bgColor;
+                color:@bgColor;
+            }
+        }
+    }
+    .table{
+        position: absolute;
+        top: 130px;
+        bottom: 10px;
+        padding: 15px;
+        width: 100%;
+        box-sizing: border-box;
+        .ivu-poptip-footer{
+            padding: 2px 16px 3px;
+        }
+        .ivu-icon-ios-help-circle{
+            display: none;
+        }
+        .ivu-poptip-popper{
+            top: 1px;
+            position: absolute;
+        }
+        .look,.delete{
+            cursor: pointer;
+            margin-left: 5px;
+            transition: all 0.3s linear;
+        }
+        .ivu-upload-drag{
+            border: 0;
+            margin-right: 10px;
+        }
+        .look{
+            
+            &:hover{
+                color: rgb(75, 185, 206) !important;
+            }
+        }
+        .delete{
+            &:hover{
+                color: red !important;
+            }
+        }
+    }
+    // 分页
+    .pageContanier{
+        position: absolute;
+        border-top: 1px solid #218da0;
+        bottom: 0;
+        height: 80px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+        padding-right: 80px;
+        box-sizing: border-box;
+        background: #fff;
+        .ivu-page-item-active{
+            background: @bgColor;
+            a{
+                color:#fff;
+            }
+        }
+    }
+}
+
+.langDrawer{
+    .demo-drawer-footer{
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-top: 1px solid #e8e8e8;
+        padding: 10px 16px;
+        text-align: right;
+        background: #fff;
+    }
+    .ivu-drawer-close{
+        transition: all 0.5s linear;
+        &:hover{
+            transform: rotate(180deg);
+        }
+    }
+
+}

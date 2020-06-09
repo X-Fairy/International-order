@@ -1,0 +1,81 @@
+.retrievePage{
+    .top{
+        background: #fff;
+        border-bottom: 1px solid @bgColor;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+        padding-left: 25px;
+        box-sizing: border-box;
+        .top_left{
+            display: flex;
+            p{
+                padding: 5px 15px;
+                background: @bgColor;
+                color:#fff;
+                margin-right: 15px;
+                cursor: pointer;
+                transition: all 0.3s linear;
+                border: 1px solid transparent;
+                border-radius: 4px;
+                margin-right: 10px;
+                &:hover{
+                    background: #1c6d7b;
+                }
+                &.export:hover{
+                    background: #fff;
+                    border: 1px solid @bgColor;
+                    color:@bgColor;
+                }
+            }
+        }
+        .top_right{
+            margin-right: 120px;
+            display: flex;
+            .item{
+                display: flex;
+                align-items: center;
+                margin-right: 18px; 
+                &>span{
+                    font-size: 15px;
+                    margin-right: 4px;
+                }
+            }
+        }
+    }
+    .table{
+        position: absolute;
+        top: 130px;
+        bottom: 10px;
+        padding: 15px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    // 分页
+    .pageContanier{
+        position: absolute;
+        border-top: 1px solid #218da0;
+        bottom: 0;
+        height: 80px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+        padding-right: 80px;
+        box-sizing: border-box;
+        background: #fff;
+        .ivu-page-item-active{
+            background: @bgColor;
+            a{
+                color:#fff;
+            }
+        }
+    }
+}
+
+.created_retrievePage{
+    .ivu-modal-footer{
+        display: none;
+    }
+}

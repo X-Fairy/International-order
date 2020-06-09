@@ -1,0 +1,227 @@
+.backOrder{
+    background: rgb(245, 247, 249);
+    height: 100%;
+    .top{
+        height: 80px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid @bgColor;
+        background: #fff;
+        padding-right: 5px;
+        .ivu-form {
+            display: flex;
+            height:100%;
+            display: flex;
+            align-items: center;
+            .ivu-form-item{
+                margin-bottom: 0;
+            }
+        }
+        .ivu-form-item-label{
+            font-size: 15px;
+        }
+        span.title{
+            color:@bgColor;
+            margin-right: 4px;
+        }
+        .hdid_input{
+            margin-left: 35px;
+        }
+        .lookup{
+            padding: 0px 12px;
+            color:#fff;
+            background: @bgColor;
+            cursor: pointer;
+            transition: all 0.5s linear;
+            margin-left:28px;
+            user-select: none;
+            &:hover{
+                background:#1b6f7d;
+            }
+        }
+    }
+    .table{
+        position: absolute;
+        top: 140px;
+        bottom: 107px;
+        left: 20px;
+        right: 20px;
+        .ivu-table-wrapper{
+            margin-top:10px;
+        }
+        .top_left{
+            padding-left: 0px;
+            display: flex;
+            align-items: center;
+            p.lookup{
+                padding: 5px 15px;
+                background: @bgColor;
+                color:#fff;
+                cursor: pointer;
+                transition: all 0.3s linear;
+                border: 1px solid transparent;
+                border-radius: 4px;
+                margin: 0 4px;
+                &:hover{
+                    background: #1c6d7b;
+                }
+                &.export:hover{
+                    background: #fff;
+                    border: 1px solid @bgColor;
+                    color:@bgColor;
+                }
+            }
+        }
+        .look,.delete{
+            cursor: pointer;
+            margin-left: 5px;
+            transition: all 0.3s linear;
+        }
+        .look{
+            
+            &:hover{
+                color: rgb(75, 185, 206) !important;
+            }
+        }
+        .demo-table-info-row td{
+            background-color: #2db7f5;
+            color: #fff;
+        }
+        .delete{
+            &:hover{
+                color: red !important;
+            }
+        }
+        .newIcon{
+            cursor: pointer;
+            font-size: 28px;
+            &:hover{
+                color:@bgColor;
+            }
+        }
+        // .td-click{
+        //     background: #2db7f5;
+        // }
+    }
+    // 分页
+    .pageContanier{
+        position: absolute;
+        border-top: 1px solid #218da0;
+        bottom: 0;
+        height: 80px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+        padding-right: 80px;
+        box-sizing: border-box;
+        background: #fff;
+        .ivu-page-item-active{
+            background: @bgColor;
+            a{
+                color:#fff;
+            }
+        }
+    }
+    
+}
+.detailClos{
+    .ivu-input-number-small{
+        height: 30px;
+        .ivu-input-number-input{
+            height: 30px;
+            width:100px;
+        }
+    }
+    .ivu-input-number-handler{
+        height: 15px;
+    }
+    .ivu-drawer-right{
+        min-width: 1500px !important;
+    }
+    .ivu-drawer-body{
+        padding:22px 16px;
+        box-sizing: border-box;
+        color:#333;
+    }
+    .icon_img{
+        cursor: pointer;
+    }
+    .loadCer{
+        background: @bgColor;
+        color:#fff;
+        padding: 8px 15px;
+        margin:18px 12px;
+        border-radius: 4px;
+        &:hover{
+            background: #1c7888;
+        }
+    }
+    // 抽屉
+    .closaTitle{
+        background: @bgColor;
+        color:#fff;
+        padding: 5px 18px;
+        box-sizing: border-box;
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    .closastate{
+        font-size: 16px;
+        color:#D92524;
+        margin-bottom: 15px;
+    }
+    .ivu-row{
+        line-height: 26px;
+    }
+    .col_price{
+        color:@bgColor;
+        font-size: 22px;
+    }
+    .item_list{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 12px;
+        box-sizing: border-box;
+        .col_img{
+            cursor: pointer;
+            width: 80px;
+            height: 80px;
+        }
+        .item_describe{
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    .ivu-icon-ios-close{
+        top: 0px; 
+        border: 1px solid #b9afaf;
+        border-radius: 50%;
+        transition: all 0.5s linear;
+        &:hover{
+            transform: rotate(180deg);
+        }
+    }
+}
+
+.orderModel_retrievePage{
+    .input_item{
+        margin-bottom: 15px;
+    }
+    .ivu-modal-footer{
+        display: none;
+    }
+    .demo-drawer-footer{
+        width: 100%;
+        border-top: 1px solid #e8e8e8;
+        padding: 18px 16px;
+        text-align: right;
+        background: #fff;
+        margin-top: 30px;
+    }
+    
+}

@@ -1,0 +1,152 @@
+.sendBackList{
+    p.order_title{
+        margin: 0;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 68px;
+        color: #757575;
+        margin-bottom: 15px;
+    }
+    .pageSimple{
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 10px;
+        .ivu-page-simple .ivu-page-simple-pager input:hover {
+            border-color: @color;
+        }
+    }
+    .serviceList{
+        li{
+            border: 1px solid #b0b0b0;
+            padding: 12px;
+            padding-top:20px;
+            margin-bottom: 15px;
+            color: #757575;
+            position: relative;
+            &:hover{
+                box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+            }
+            .del{
+                position: absolute;
+                right: 8px;
+                top: 2px;
+                margin-bottom: 10px;
+                cursor: pointer;
+                margin-bottom: 6px;
+                color:#757575;
+                &:hover{
+                    color:#000;
+                }
+            }
+            .top{
+                display: flex;
+                justify-content: space-between;
+                h3{
+                    font-size: 18px;
+                    font-weight: normal;
+                    margin-bottom: 5px;
+                    span{
+                        font-size: 80%;
+                        margin-left: 5px;
+                        font-size: 16px;
+                        color:@bgColor;
+                    }
+                }
+                p{
+                    border: 1px solid #b0b0b0;
+                    background: #fff;
+                    color: #757575;
+                    display: flex;
+                    align-items: center;
+                    padding:2px 10px;
+                    border-radius: 4px;
+                    font-size: 15px;
+                    box-sizing: border-box;
+                    cursor: pointer;
+                    justify-content: center;
+                    transition: background 0.5s linear;
+                    margin-right: 20px;
+                    &:hover{
+                        background: #757575;
+                        color:#fff;
+                        border: 0;
+                    }
+                }
+            }
+            p{
+                .sqrq{
+                    margin-right: 5px;
+                }
+                .code{
+                    cursor: pointer;
+                    &:hover{
+                        color:@color;
+                    }
+                }
+            }
+            .bottom{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                p.detail{
+                    font-size: 16px;
+                }
+                p.cancel{
+                    border: 1px solid #b0b0b0;
+                    background: #fff;
+                    color: #757575;
+                    display: flex;
+                    align-items: center;
+                    height:25px;
+                    width: 100px;
+                    box-sizing: border-box;
+                    cursor: pointer;
+                    margin-right: 20px;
+                    justify-content: center;
+                    transition: background 0.5s linear;
+                    &:hover{
+                        background: #757575;
+                        color:#fff;
+                        border: 0;
+                    }
+                }
+            }
+        }
+    }
+    .page{
+        display: flex;
+        justify-content: center;
+        padding-top: 25px;
+        font-size: 16px;
+        .ivu-page-item-active{
+            background-color: @bgColor;
+            border-color: @bgColor;
+            a{
+                color:#fff;
+            }
+        }
+        .ivu-page-item{
+            &:hover{
+                border:1px solid  @bgColor;
+                a{
+                    color:#fff;
+                }
+            }
+        }
+    }
+    .empty_content{
+        .emprt_inner{
+            width:100%;
+            margin:0 auto;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 30px;
+            font-size: 22px;
+            .alert{
+                color:red;
+                margin-right: 5px;
+            }
+        }
+    }
+}

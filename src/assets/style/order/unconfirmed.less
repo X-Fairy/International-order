@@ -1,0 +1,120 @@
+.unconfirmedPage{
+    p.order_title{
+        margin: 0;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 68px;
+        color: #757575;
+        margin-bottom: 15px;
+        span{
+            margin-left: 10px;
+            font-size: 12px;
+            line-height: 1.5;
+        }
+    }
+    .order_cantanier{
+        .ivu-tabs-bar{
+            .ivu-tabs-tab-focused{
+                color:#757575;
+                font-size: 15px;
+                &:hover{
+                    color:#333;
+                }
+            }
+        }
+    }
+    .pageSimple{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .page{
+        display: flex;
+        justify-content: center;
+    }
+    .order_list{
+        padding: 10px 0;
+        li{
+            margin-bottom: 20px;
+            border: 1px solid #e0e0e0;
+            box-sizing: border-box;
+            &:hover{
+                box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+            }
+            .list_top{
+                color: #b0b0b0;
+                font-size: 18px;
+                font-weight: normal;
+                box-sizing: border-box;
+                padding-top: 12px;
+                h3{
+                    font-size: 15px;
+                    font-weight: normal;
+                    padding: 0 32px;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 15px;
+                    p.order_detail{
+                        border:1px solid #b0b0b0;
+                        color:  #757575;
+                        transition: all .4s;
+                        width: 100px;
+                        height: 25px;
+                        text-align: center;
+                        line-height: 25px;
+                        margin-right: 15px;
+                        cursor: pointer;
+                        font-size: 12px;
+                        &:hover{
+                            background: #757575;
+                            color:#fff;
+                        }
+                    }
+                }
+            }
+            .list_middle{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 35px;
+                padding: 0 28px;
+                box-sizing: border-box;
+                padding-bottom: 15px;
+                .middle_left{
+                    color: #757575;
+                    font-size: 15px;
+                    span{
+                        margin: 0 5px;
+                    }
+                    .sheet{
+                        cursor: pointer;
+                        &:hover{
+                            color:@color;
+                        }
+                    }
+                }
+                p.sale{
+                    font-size: 15px;
+                    margin-top: 3px;
+                    display: flex;
+                    align-items: center;
+                    span{
+                        height: 18px;
+                        margin-right: 5px;
+                        font-size: 26px;
+                        font-weight: 200;
+                        line-height: 1;
+                        color: #333;
+                        margin-top: -10px;
+                    }
+                }
+            }
+        };
+    }
+    .ivu-page-item-active {
+        background-color: @color;
+        border-color:  @color;
+    }
+    .ivu-page-item:hover{
+        border: 1px solid @color;
+    }
+}

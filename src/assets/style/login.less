@@ -1,0 +1,240 @@
+.loginPage{
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    input:-internal-autofill-selected {
+        background:#fff !important;
+    }
+    .header{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        .header_inner{
+            width:@bgWidth;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            .site_right{
+                display: flex;
+                align-items: center;
+                &>span{
+                    font-size: 16px;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+    .content{
+        background: url(../images/banner.png) center center no-repeat;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 100%;
+        margin-bottom: 80px;
+        .content_inner{
+            display: flex;
+            align-items: center;
+            width:@bgWidth;
+            margin: 0 auto;
+            overflow: hidden;
+            position: relative;
+            height: 600px;
+            .login{
+                position: absolute;
+                right: 0px;
+                width: 450px;
+                background: #fff;
+                box-shadow: 0 3px 6px #fff;
+                border-top: 4px solid #218da0;
+                padding: 20px 0;
+                box-sizing: border-box;
+                .ivu-form-item{
+                    margin-bottom: 15px;
+                }
+                .ivu-form-item-error-tip{
+                    display: flex;
+                    position: absolute;
+                    right: 0;
+                    justify-content: flex-end;
+                }
+                .sign{
+                    font-family: arial;
+                    margin: 0px 0px 32px;
+                    font-size: 26px;
+                    padding-left: 20px;
+                }
+                .loginForm{
+                    padding-right: 15px;
+                    box-sizing: border-box;
+                    padding: 0 34px;
+                    .ivu-checkbox-checked .ivu-checkbox-inner {
+                        border-color: #218da0;
+                        background-color: #218da0;
+                    }
+                    .ivu-input-wrapper{
+                        border-left: 2px solid @bgColor;
+                        .ivu-input{
+                            height: 40px;
+                            line-height: 40px;
+                            border-left: none;
+                            font-size: 15px;
+                            padding-left: 12px;
+                            box-sizing: border-box;
+                            &:hover{
+                                border-color:@bgColor;
+                            }
+                            &:focus{
+                                box-shadow: 2px 2px 4px rgba(32,140,159,.4);
+                            }
+                        }
+                    }
+                    .ivu-form-item-content{
+                        position: relative;
+                        margin-bottom: 10px;
+                        .ivu-checkbox-wrapper{
+                            font-size: 16px;
+                        }
+                        .login_icon{
+                            position: absolute;
+                            z-index: 99;
+                            left: 2px;
+                            top: 3px;
+                            padding: 0 12px 0;
+                            background:#fff;
+                            transition: all .2s ease 0s;
+                            span{
+                                margin-left: 3px;
+                                font-size: 15px;
+                                user-select: none;
+                                transition: all .5s ease 0s;
+                            }
+                        }
+                        .login_icon.mail_icon{
+                            color:@bgColor;
+                            span{
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                    .passInput{
+                        position: relative;
+                        .check,.noCheck{
+                            position: absolute;
+                            position: absolute;
+                            right: 5px;
+                            top: 13px;
+                            color: #218da0;
+                            cursor: pointer;
+                            font-size: 12px;
+                            &:hover{
+                                color:red;
+                            }
+                        }
+                        .noCheck{
+                            top: 4px;
+                            color: #218da0;
+                            cursor: pointer;
+                            font-size: 25px;
+                        }
+                    }
+                    .code_img{
+                        position: relative;
+                        margin-bottom: 5px;
+                        .divIdentifyingCode{
+                            position: absolute;
+                            right: 1px;
+                            top: 1px;
+                            height: 40px;
+                            img{
+                                border-width: 0 1px 0px !important;
+                                height:38px;
+                                width: 105px; 
+                                cursor: pointer;
+                                border: 1px solid #ddd;
+                                box-sizing: border-box;
+                                border-bottom: 0;
+                            }
+                        }
+                    }
+                    .remember_pass{
+                        margin-bottom: 5px;
+                        .ivu-form-item-content{
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                        }
+                        .right{
+                            .langChoice{
+                                height: 60px;
+                                .ivu-dropdown-rel{
+                                    height: 100%;
+                                    &>a{
+                                        display: inline-block;
+                                        height: 100%;
+                                        display: flex;
+                                        align-items: center;
+                                        color:@bgColor;
+                                        font-size: 15px;
+                                        img{
+                                            width: 30px; 
+                                            margin:0 6px;
+                                        }
+                                    }
+                                }
+                                .ivu-select-dropdown{
+                                    .ivu-dropdown-item{
+                                        display: flex;
+                                        align-items: center;
+                                    }
+                                }
+                            }
+                            .choice{
+                                color:@bgColor;
+                                margin-right: 5px;
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
+                .submit {
+                    display:flex;
+                    position:relative;
+                    background:@bgColor;
+                    color:#fff;
+                    user-select: none;
+                    width:100%;
+                    height: 38px;
+                    justify-content: center;
+                    align-items: center;
+                    font-family:'Ubuntu',sans-serif;
+                    text-decoration:none;
+                    border-radius:19px;
+                    overflow:hidden;
+                    transition:all 0.15s ease-in;
+                    font-size: 18px;
+                    cursor: pointer;
+                    &:hover {
+                        background:#22a0b6;
+                    }
+                    &:before {
+                        content:' ';
+                        position:absolute;
+                        background:#fff;
+                        width:25px;
+                        height:50px;
+                        top:0;
+                        left:-45px;
+                        opacity:0.3;
+                        transition:all 0.25s ease-out;
+                        transform:skewX(-25deg);
+                    }
+                    &:hover:before {
+                        width:45px;
+                        left:400px;
+                    }
+                }
+            }
+        }
+    }
+}

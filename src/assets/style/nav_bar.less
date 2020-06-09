@@ -1,0 +1,257 @@
+.nav_bar {
+    position    : absolute;
+    width       : 200px;
+    background  : #001529;
+    font-size   : 14px;
+    color       : #5a5c5c;
+    box-sizing  : border-box;
+    transition  : width .5s linear;
+    bottom      : 0;
+    top         : 0;
+    border-right: 1px solid #ddd;
+    .ivu-icon-ios-arrow-forward{
+        display: inline-block;
+    }
+    &.active {
+        width: 65px;
+        .ivu-icon-ios-arrow-forward{
+            display: none;
+        }
+        ul{
+            li{
+                text-align: center;
+                padding: 5px 0;
+            }
+        }
+        .navItem .parent .ivu-collapse .ivu-collapse-item .ivu-collapse-header{
+            padding-left: 0;
+            color:#fff;
+            margin-left: -5px;
+            .iconfont {
+                font-size: 22px !important;
+            }
+        }
+        .ivu-collapse-content .ivu-collapse-content-box{
+            .iconfont{
+                font-size: 16px;
+                cursor: pointer;
+            }
+        }
+        .li_active{
+            background: transparent;
+        }
+        .nav_icon {
+            margin-right: 10px !important;
+            font-size   : 22px;
+        }
+    }
+
+    .logo_icon {
+        display        : flex;
+        justify-content: center;
+        align-items    : center;
+        padding        : 15px 0;
+
+        img {
+            width : 50px;
+            height: 50px;
+        }
+    }
+
+    .nav {
+        color      : #b3b9bf;
+        padding    : 8px 0 8px 35px;
+        transition : all 0.2s ease-in-out;
+        cursor     : pointer;
+        &:hover {
+            color: #fff;
+        }
+
+        &.active {
+            display        : flex;
+            justify-content: center;
+            
+        }
+
+        .ivu-tooltip-dark {
+            left: 65px !important;
+        }
+
+        .active_icon {
+            .iconfont {
+                color    : #fff;
+                font-size: 22px;
+            }
+        }
+
+        .nav_icon {
+            margin-right: 24px;
+            font-size   : 22px;
+        }
+
+    }
+    .nav_icon {
+        margin-right: 10px;
+        font-size   : 22px;
+    }
+    .navItem {
+        .parent {
+            width: 100%;
+
+            .ivu-collapse {
+                border: none;
+
+                .ivu-collapse-item {
+                    background: #001529;
+                    .ivu-collapse-header {
+                        border  : none;
+                        color   : #b3b9bf;
+                        position: relative;
+                        padding-left: 0;
+                        width: 100%;
+                        padding-left: 35px;
+                        color: rgba(255, 255, 255, 0.7);
+                        span{
+                            margin-left: 14px;
+                        }
+                        .ivu-icon-ios-arrow-forward {
+                            position    : absolute;
+                            right       : 10px;
+                            top         : 40%;
+                            margin-right: 0px;
+
+                        }
+
+                        &:hover {
+                            color: #fff;
+                        }
+
+                    }
+
+                    .ivu-collapse-content {
+
+                        background    : #001529;
+                        color         : #fff;
+                        padding   : 7px 0;
+                        .ivu-collapse-content-box {
+                            padding: 8px 0;
+                            width  : 100%;
+                            color  : #b3b9bf;
+
+                            .content {
+                                padding: 5px 0 5px 48px;
+                                cursor: pointer;
+                                display: flex;
+                                justify-content: flex-start;
+                                font-size: 14px;
+                                &:hover {
+                                    color: #fff;
+                                }
+                                span{
+                                    margin-left: 5px;
+                                }
+                            }
+
+                            .avtive_content {
+                                padding: 5px 24px;
+                                color: #fff;
+                                .iconfont{
+                                    &:hover{
+                                        color:#28a7bd;
+                                    }
+                                }
+                               
+                            }
+
+
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+    li.li_active {
+        background: @bgColor;
+        color     : #ffffff;
+        font-size : 16px;
+        .ivu-collapse-content-box{
+            background: #000c17;
+            .iconfont{
+                font-size: 16px;
+            }
+        }
+        .ivu-tooltip-popper{
+            left: 65px !important;
+        }
+        .parent .ivu-collapse .ivu-collapse-item .ivu-collapse-header .ivu-icon-ios-arrow-forward{
+            top: 30%;
+            right: 2px;
+        }
+    }
+
+    .content.item_active {
+        background: #218da0;
+        color     : #ffffff;
+        font-size : 16px;
+    }
+    .avtive_content.item_active {
+        background: #218da0;
+        color     : #ffffff;
+        font-size : 16px;
+    }
+    #parent_tooltip{
+        .iconfont{
+            font-size: 16px;
+        }
+        .ivu-tooltip-popper{
+            left: 65px !important;
+        }
+        .ivu-tooltip-inner{
+            div{
+                transition: all 0.3s linear;
+                padding: 0 12px;
+                display: flex;
+                align-items: center;
+                max-width: auto;
+                &:hover{
+                    background: #e6e7e8;
+                }
+            }
+        }
+    }
+}
+
+.el-tooltip__popper.is-dark{
+    background: #303133;
+    color: #dde2e7;
+    box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px;
+    margin-left: 35px;
+    &>div{
+        cursor: pointer;
+    }
+    span{
+        margin-left: 8px;
+        cursor: pointer;
+        &:hover{
+            color: #fff;
+        }
+    }
+}
+
+
+.el-tooltip__popper {
+    position: absolute;
+    border-radius: 4px;
+    padding: 10px 15px;
+    z-index: 2000;
+    font-size: 15px;
+    line-height: 28px;
+    min-width: 10px;
+    word-wrap: break-word;
+}
+.ivu-collapse>.ivu-collapse-item>.ivu-collapse-header>i {
+    transition: transform .2s ease-in-out;
+    margin-right: 0 !important;
+}

@@ -1,0 +1,82 @@
+.sellWell{
+    p.order_title{
+        margin: 0;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 68px;
+        color: #757575;
+        span{
+            margin-left: 10px;
+            font-size: 12px;
+            line-height: 1.5;
+        }
+    }
+    .date{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        .numSelect{
+            border-radius: 0;
+            margin-right: 15px;
+        }
+        .ivu-select-selection{
+            padding-top: 5px;
+            height: 40px;
+            border-radius: 0;
+            line-height: 40px;
+        }
+        .ivu-select-visible .ivu-select-selection{
+            border-color:@color;
+            box-shadow: none;
+        }
+        .ivu-select-item-selected.ivu-select-item-focus{
+            background: @color;
+        }
+        .ivu-date-picker{
+            height: 40px;
+            .ivu-date-picker-rel{
+                height: 100%;
+                .ivu-input-wrapper{
+                    height: 100%;
+                    .ivu-icon{
+                        height: 100%;
+                        line-height: 40px;
+                    }
+                    .ivu-input{
+                        height: 100%;
+                        &:focus{
+                            outline: 0 !important;
+                            box-shadow: none !important;
+                            border-color: @color;
+                        }
+                    }
+                }
+            }
+        }
+        .check{    
+            padding: 5px 14px;
+            color: #fff;
+            cursor: pointer;
+            background: @bgColor;
+            font-size: 14px;
+            transition: all 0.2s;
+            margin-left: 15px;
+            &:hover{
+                background: #1f7c8c;
+            }
+        }
+    }
+    .goodsType{
+        h3{
+            height: 50px;
+            padding: 0 32px;
+            margin: 28px 0;
+            border-left: 2px solid #d8262c;
+            background-color: #eee;
+            color: #333;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 50px;
+        }
+    }
+}

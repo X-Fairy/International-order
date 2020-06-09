@@ -1,0 +1,143 @@
+
+.orderDetailPage{
+    p.order_title{
+        margin: 0;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 68px;
+        color: #333;
+    }
+    .spin{
+        width: 100%;
+        display:flex;
+        justify-content: center;
+        margin: 40px 0;
+        img{
+            width:80px;
+            height: 80px;
+        }
+
+    }
+    // 订单详情
+    .orD_main{
+        .orD_title,.orD_goods{
+            margin:20px 0;
+            font-size: 18px;
+            font-weight: 400;
+            color: #333;
+            display: flex;
+            justify-content: space-between;
+            h3{
+                font-weight: normal;
+            }
+            a{
+                background: @bgColor;
+                color:#fff;
+                padding: 4px 10px;
+                transition: all 0.3s linear;
+                font-size: 16px;
+                border-radius: 4px;
+                &:hover{
+                    background: #186471;
+                }
+            }
+        }
+        .orD_title{
+            color:@bgColor;
+            font-size: 26px;
+        }
+        .orD_top{
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 15px 0;
+            .orD_order,.order_stastu{
+                font-size: 18px;
+                color:#333;
+            }
+        }
+        .hoverClass:hover{
+            color:@bgColor;
+        }
+        .ivu-table td{
+            border-bottom: 0px;
+        }
+        ul{
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e0e0e0;
+            li{
+                height: 80px;
+                margin-bottom: 15px;
+                padding-right: 5px;
+                box-sizing: border-box;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                color:#757575;
+                font-size: 14px;
+                .img{
+                    width: 80px;
+                    height: 80px;
+                    background: #333;
+                    cursor: pointer;
+                    img{
+                        width: 80px;
+                        height: 80px;
+                        display: inline-block;
+                    }
+                }
+                p.orD_name{
+                    width: 22%;
+                    cursor: pointer;
+                    text-align: center;
+                    &:hover{
+                        color:@bgColor;
+                    }
+                }
+                .encoded{
+                    width: 99px;
+                    cursor: pointer;
+                }
+                .orD_total{
+                    width: 80px;
+                    font-size: 14px;
+                }
+            }
+        }
+        .explain{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding-top: 25px;
+            color:#333;
+            font-size: 16px;
+            span{
+                font-size: 16px;
+                color:@bgColor;
+                &.totalPrice{
+                    font-size: 30px;
+                    margin: -2px 5px 0 10px;
+                }
+            }
+        }
+    }
+    .ivu-spin-large .ivu-spin-dot {
+        width: 32px;
+        height: 32px;
+        display: inline-block;
+    }
+    .ivu-spin-text {
+        display: block;
+        color:#333;
+        font-size: 14px;
+    }
+    th,td{
+        span{
+            font-size: 15px;
+        }
+    }
+    .ivu-checkbox-checked .ivu-checkbox-inner{
+        border-color: @bgColor;
+        background-color: @bgColor;
+    }
+}

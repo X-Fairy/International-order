@@ -1,0 +1,157 @@
+.reverseListPage{
+    p.order_title{
+        margin: 0;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 68px;
+        color: #333;
+        span{
+            margin-left: 10px;
+            font-size: 12px;
+            line-height: 1.5;
+        }
+    }
+    .spin{
+        width: 100%;
+        display:flex;
+        justify-content: center;
+        margin: 40px 0;
+        img{
+            width:80px;
+            height: 80px;
+        }
+
+    }
+    .order_list{
+        padding: 10px 0;
+        li{
+            margin-bottom: 20px;
+            border: 1px solid #e0e0e0;
+            box-sizing: border-box;
+            border: 1px solid @color;
+            &:hover{
+                box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+            }
+            .list_top{
+                color: #b0b0b0;
+                font-weight: normal;
+                box-sizing: border-box;
+                padding-top: 10px;
+                background: #fffaf7;
+                h3{
+                    font-size: 16px;
+                    font-weight: normal;
+                    padding: 0 32px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 15px;
+                    color:@bgColor;
+                    font-weight: bold;
+                    p.order_detail{
+                        border:1px solid @bgColor;
+                        color:  @bgColor;
+                        font-weight: normal;
+                        transition: all .4s;
+                        padding: 2px 12px;
+                        text-align: center;
+                        margin-right: 15px;
+                        cursor: pointer;
+                        font-size: 14px;
+                        transition: all 0.2s linear;
+                        &:hover{
+                            background: @bgColor;
+                            color:#fff;
+                        }
+                    }
+                }
+            }
+            .list_middle{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 35px;
+                padding: 0 28px;
+                border-bottom: 1px solid #e0e0e0;
+                box-sizing: border-box;
+                padding-bottom: 15px;
+                .middle_left{
+                    color: #757575;
+                    font-size: 15px;
+                    span{
+                        margin: 0 5px;
+                    }
+                    .sheet{
+                        cursor: pointer;
+                        &:hover{
+                            color:@bgColor;
+                        }
+                    }
+                }
+                p.sale{
+                    font-size: 15px;
+                    margin-top: 3px;
+                    display: flex;
+                    align-items: center;
+                    span{
+                        height: 18px;
+                        margin-right: 5px;
+                        font-size: 24px;
+                        font-weight: 200;
+                        line-height: 1;
+                        color: @bgColor;
+                        margin-top: -4px;
+                    }
+                    .yuan{
+                        font-size: 14px;
+                        margin-top: 10px;
+                    }
+                }
+            }
+        };
+    }
+    .table{
+        margin: 25px 0;
+    }
+    .pageSimple{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .page{
+        display: flex;
+        justify-content: center;
+        font-size: 16px;
+    }
+    .confirmed{
+        min-height: 300px;
+        li{
+            border: 1px solid grey !important;
+        }
+        .list_top{
+            background: #fff !important;
+        }
+    }
+    .ivu-spin-large .ivu-spin-dot {
+        width: 32px;
+        height: 32px;
+        display: inline-block;
+    }
+    .ivu-spin-text {
+        display: block;
+        color:#333;
+        font-size: 14px;
+    }
+    .ivu-page-item-active {
+        background-color: @bgColor;
+        border-color:  @bgColor;
+        a{
+            color:#fff;
+        }
+    }
+    .ivu-page-item:hover{
+        border: 1px solid @bgColor;
+    }
+    th,td{
+        font-size: 15px;
+    }
+}
